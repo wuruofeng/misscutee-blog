@@ -1,0 +1,34 @@
+baseURL = "/"
+languageCode = "zh-CN"
+title = "Misscutee"
+theme = "ivy"
+disqusShortname = "Misscutee"
+hasCJKLanguage = true
+toc = true
+enableEmoji = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+  newsletter = "/newsletter/:year/:month/:slug/"
+
+[Menus]
+  main = [
+      {Name = "posts", URL = "/posts/"},
+      {Name = "tags", URL = "/tags/"},
+      {Name = "photos", URL = "/photos/"}
+  ]
+
+[params]
+  # description abou this website
+  description = "There is only one thing in the world worse than being talked about, and that is not being talked about."
+  footer = "&copy; [Misscutee](https://Misscutee.me) | @2015 - 2021"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml", "tex"]
+  highlightjsTheme = "github"
+  highlightjsVersion = "9.12.0"
+
+[params.twikoo]
+	enable = true
