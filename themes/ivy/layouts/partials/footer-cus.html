@@ -5,6 +5,9 @@
   {{ with .Site.Params.footer }}
   <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
+  {{ with .Site.Params.beian }}
+  <div class="copyright">{{ . | markdownify }}</div>
+  {{ end }}
   </footer>
   </article>
   {{ template "_internal/google_analytics.html" . }}
